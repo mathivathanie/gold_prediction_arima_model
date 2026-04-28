@@ -45,19 +45,6 @@ predicted_price = predict_date(model, df, '2026-05-15')
 print(f"Predicted gold price: ${predicted_price:.2f}")
 ```
 
-## Data Format
-
-Your CSV file should have the following columns:
-- `Date`: Date in DD-MM-YYYY format
-- `Price`: Gold price (can include commas as thousand separator)
-
-Example:
-```
-Date,Price
-28-04-2026,2050.50
-27-04-2026,2049.75
-```
-
 ## Dataset
 
 The model was trained using 5 years of daily gold price data (2020-2025). The dataset was downloaded from [Investing.com - Gold Historical Data](https://in.investing.com/commodities/gold-historical-data).
